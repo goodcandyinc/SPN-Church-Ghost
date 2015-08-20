@@ -1,0 +1,327 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+      <!-- BANNER SLIDER
+      ================================================== -->
+      <div id="myCarousel" class="carousel slide hidden-xs" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item slide-one active">
+            <div class="container">
+              <div class="carousel-caption">
+               <!--<h1 >Happy Easter Sunday!</h1>
+                <h3>CHECK OUT OUR BULLETIN</h3>
+               
+                <!-- <p><a class="btn btn-giant btn-primary" href="charity-donation.html" role="button">Learn About the Church</a></p>-->
+              </div>
+            </div>
+          </div>
+          <div class="item slide-two">
+            <div class="container">
+              <div class="carousel-caption" style="color:#03437a; top:5%">
+                                              
+                                    <h3 class="tk-alternate-gothic-no-2-d">WEEKEND MASS TIMES</h3>
+                                    <h5 class="mass_Header">SATURDAY</h5>
+                                    <p style="font-size:20px">05:00 PM</p>
+                                    <h5 class="mass_Header">Sunday</h5>
+                                    <p style="font-size:20px">07:00 AM</p>
+                                    <p style="font-size:20px">08:30 AM</p>
+                                    <p style="font-size:20px">10:00 AM</p>
+                                    <p style="font-size:20px">11:30 AM</p>
+                                
+              </div>
+            </div>
+          </div>
+          <div class="item slide-three">
+            <div class="container">
+              <div class="carousel-caption">
+              </div>
+            </div>
+          </div>
+          <div class="item slide-four">
+            <div class="container">
+              <div class="carousel-caption" style="color:#03437a; top:15%">
+                <h3>CHURCH NOTES FROM MONSIGNOR VANCE! </h3><br>
+                  <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                View Notes
+                </button>                                
+            </div>
+          </div>
+        </div>          
+      </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> </div>
+        <!-- // Banner Slider -->
+        <!--UPCOMING EVENT-->
+        <div class="highlight-bg">
+          <div class="container event-cta">
+            <div class="ec-txt tk-franklin-gothic-urw"> <span>THIS WEEK AT SAINT PHILIP NERI CHURCH</span>
+              <p class='tk-abril-display'>This Weeks Readings and Bulletin- August 16th, 2015</p>
+        	</div>
+          <!-- ***************** Update Below Weekly ********************* -->
+            <a class="btn btn-lg btn-primary dload" href="/shared/bulletins/2015/08-16-2015.pdf" role="button" style="margin:7px;" id="bulletin">View Bulletin</a> 
+            <a class="btn btn-lg btn-primary dload" href="/tag/readings" role="button" style="margin:7px;">View Readings</a> 
+
+          </div>
+    
+        </div>
+
+<!-- *********** Weekly Update EDITION ***************** -->
+
+        <div class="has-margin-bottom" style="padding-top:30px;">
+                <div class="container event-list">
+                    <div class="section-title mass-date">
+                        <h4 class="tk-proxima-nova date-title" style="font-weight:300; text-align:center;">ANNOUNCED MASSES FOR THE WEEK OF <span class="tk-proxima-nova" style="font-weight:bold; color:black;">August 9th</span></h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="owl-carousel">
+
+                                <div class="el-block item">
+                                    <h4>MONDAY</h4>
+                                    <p class="el-head">Robert Benson</p><span>08:30 AM</span>
+                                </div>
+
+                                <div class="el-block item">
+                                    <h4>TUESDAY</h4>
+                                    <p class="el-head">Pauline and Anthony Porreca</p><span>08:30 AM</span>
+                                </div>
+
+                                <div class="el-block item">
+                                    <h4>WEDNESDAY</h4>
+                                    <p class="el-head">Henry and Cecelia Kropp</p><span>08:30 AM</span>
+                                </div>
+
+                                <div class="el-block item">
+                                    <h4>THURSDAY</h4>
+                                    <p class="el-head">James Knight</p><span>08:30 AM</span>
+                                </div>
+                                <div class="el-block item">
+                                    <h4>FRIDAY</h4>
+                                    <p class="el-head">Stephen Petrokubi</p><span>08:30 AM</span>
+                                </div>
+                                <div class="el-block item">
+                                    <h4>SATURDAY</h4>
+                                    <p class="el-head">Eleanor McNichol</p><span>08:30 AM</span><br>
+
+                                    <p class="el-head">VIGIL</p><span>05:00 PM</span><br>
+                                </div>
+                                <div class="el-block item">
+                                    <h4>SUNDAY</h4>
+                                    <p class="el-head">MASS</p><span>07:00 AM</span><br>
+                                    <span>08:30 AM</span><br>
+                                    <span>10:00 AM</span><br>
+                                    <span>11:30 AM</span>
+                                </div>                                     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<hr style="border-top: 3px solid #DEE6F3; width:65%"><br><br>  
+
+<!--PASTOR NOTES POP UP Box -->
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      
+                      <h4 class="modal-title" id="myModalLabel" style="text-align:center;">Pastor's Notes</h4>
+                    </div>
+                    <div class="modal-body" style="text-align:left;">
+                        <ul>
+                          <li>There will be no 6:30 AM Masses from June 15th until September 7th. The 6:30 am Masses will resume September 8th. There will be no adoration during July and August. Adoration will resume in September.
+                          </li>
+                          <li>
+                          We are looking forward to the visit of Pope Francis on September 27th. However, many of us will not be heading into the city for the live audience. St. Philip Neri will be hosting a pot luck meal with live streaming of the Papal mass. This will be a wonderful opportunity to be part of a community while witnessing this historic moment for the Church of Philadelphia. Please keep an eye out in the bulletin for more information in early September.
+                          </li>
+                          <li>
+                            Congratulations to our parishioner, <b>Mary DiDonato<b> who celebrated her <b>100th birthday</b> on August 10th. Mary has been a loyal and dedicated member of St. Philip’s for many years. We wish her many blessings in the years to come.
+                          </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<!-- End Modal -->
+
+<!-- END EASTER SUNDAY SCHEDULE -->
+  <!-- BLOG LIST / LATEST SERMONS -->
+    <div class="container has-margin-bottom">
+      <div class="row">
+        <div class="col-md-8 has-margin-bottom">
+          <div class="section-title left-align-desktop">
+            <h4> ONGOING AT ST. PHILIPS </h4>
+          </div>
+          
+          <!--Blog list-->
+          
+            
+            <!--Blog list-->
+            
+    		{{> "loop"}}
+                                
+          </div>
+                <!--// col md 9-->
+                
+                <!--Latest Sermons-->
+                <div class="col-md-4">
+                  <div class="well">
+                    <div class="section-title">
+                      <h4> ANNOUNCEMENTS </h4>
+                    </div>
+                    <!--<a href="#"><img src="/content/images/video-thumb.jpg" class="img-responsive center-block" alt="video thumb"></a>-->
+                    <div class="list-group">
+                      <p class="list-group-item-heading"><b>Men's Prayer Group</b></p>
+                      <p class="list-group-item-text">Meets every Wednesday at 7:30 a.m. in the Rectory Conference Room. <br><br><b>Contact: Duane McCarthy 610.825.5237</b></p>
+                      <br>
+                      <hr class="specialhr">
+                      <p class="list-group-item-heading"><b>Women's Prayer Group</b></p>
+                      <p class="list-group-item-text">  Our women's prayer group meets in the Rectory Conference Room every Thursday from 10-11 a.m. Reflections on the day's readings and the upcoming Sunday readings are shared within the context of the Prayer of the Church.</p>
+                      <br>
+                      <hr class="specialhr">
+                      <p class="list-group-item-heading"><B>Prayer Requests</B></p>
+                      <p class="list-group-item-text">All prayer requests should be submitted in writing to our parish office. The address to mail prayer requests is St. Philip Neri Church 437 Ridge Pike Lafayette Hill, PA 19444.</p>
+                      <br>
+                      <hr class="specialhr">
+                      <p class="list-group-item-heading"><b>Baptismal Instructions</b></p>
+                      <p class="list-group-item-text">Your baby is always welcome in Church, however, for the instruction itself, please try to schedule a babysitter so you may be free to concentrate.<br><br><b>Contact: Church Office at 610-834-1975</b></p>
+                      <br>
+                      <hr class="specialhr">
+                      <p class="list-group-item-heading"><b>Are You A Parent Who Has Lost A Child?</b></p>
+                      <p class="list-group-item-text">An informal group of Moms and Dads get together to talk or just listen to others who understand how you feel. This group meets every third Tuesday of the month at 7:00 PM in the Rectory Conference Room. <br><br><b>Contact: Marianne O'Connor 610-825-4975 or Rosemary McNichol 215-247-2267.</b></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END BLOG LIST / LATEST SERMONS -->
+
+
+          <!-- // UPCOMING EVENT -->
+          <!--FEATURED BLOCK-->
+          <div class="container">
+            <div class="row feature-block">
+              <div class="col-md-4 col-sm-6 has-margin-bottom"> <a href="about.html"> <img class="img-responsive" src="/content/images/thumb-1.jpg" alt="catholic church"></a>
+              <h5>ABOUT ST. PHILIP NERI CHURCH</h5>
+              <p>Learn more about the history of St. Philip Neri Church.   </p>
+              <p><a href="about.html" role="button">View details →</a></p>
+            </div>
+            <!-- /.col-md-4 -->
+            <div class="col-md-4 col-sm-6 has-margin-bottom"> <a href="resources/RCIA-FLYER_Website.pdf"><img class="img-responsive" src="/content/images/thumb-2.png" alt="ministry sermon"></a>
+            <h5>WANT TO EXPERIENCE THE JOY OF CATHOLICISM?</h5>
+            <p>Click here to check out RCIA and learn more about becoming a member of the Catholic Church.  </p>
+            <p><a href="resources/RCIA-FLYER_Website.pdf" role="button">View details →</a></p>
+          </div>
+          <!-- /.col-md-4 -->
+          <div class="col-md-4 col-sm-8 col-sm-offset-2 col-md-offset-0 center-this has-margin-bottom"><a href="Saint_Philip_Neri.html"> <img class="img-responsive" src="/content/images/thumb-3.jpg" alt="bulletin programs"></a>
+          <h5>THE LIFE OF ST. PHILIP NERI</h5>
+          <p>Learn about who St. Philip Neri, from his early years to Ordination.  Click below for more information. </p>
+          <p><a href="Saint_Philip_Neri.html" role="button">View details →</a></p>
+        </div>
+        <!-- /.col-md-4 -->
+      </div>
+    </div>
+    <!-- // END FEATURED BLOCK-->
+
+
+
+
+  
+            <!-- BIBLE QUOTES -->
+            <div class="highlight-bg has-margin-bottom">
+              <div class="container event-list">
+                <div class="section-title">
+                  <h4> QUOTES </h4>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="owl-carousel2">
+                      <div class="item">
+                      <blockquote class="blockquote-centered"> Cheerfulness strengthens the heart and makes us persevere in a good life. Therefore the servant of God ought always to be in good spirits.<small>Saint Philip Neri</small> </blockquote>
+                    </div>
+                    <div class="item">
+                      <blockquote class="blockquote-centered"> For if, by the trespass of the one man, death reigned through that one man, how much more will those who receive God's abundant provision of grace!
+                      <small>Romans 5:17 (NIV)</small> </blockquote>
+                    </div>
+                    <div class="item">
+                    <blockquote class="blockquote-centered">For God did not send his Son into the world to condemn the world, but to save the world through him. <small>John 3:17</small> </blockquote>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- // END BIBLE QUOTES -->
+        <!-- OUR MINISTRIES -->
+        <div class="container">
+          <div class="section-title">
+            <h4> ADDITIONAL INFORMATION </h4>
+          </div>
+          <div class="row feature-block">
+            <div class="col-md-4 col-sm-6 has-margin-bottom"> <!--<img class="img-responsive" src="/content/images/ministry_1.jpg" alt="catholic church">-->
+            <h5>MASS SCHEDULE</h5>
+            <p><b>Sundays:</b><br>
+            7:00 a.m., 8:30 a.m., 10:00 a.m. and 11:30 a.m.
+            <br><br>
+            <b>Daily:</b>
+            <br>
+            <u>Monday-Friday</u> 6:30 a.m. & 8:30 a.m.
+            <br>
+            <u>Saturday</u>- 8:30 a.m. 5:00 Vigil
+            <br><br>
+            <b>Note:</b> There will be no 6:30 AM Masses from June 15th until September 7th. The 6:30 am Masses will resume September 8th. There will be no adoration during July and August. Adoration will resume in September.</p>
+          </div>
+          <!-- /.col-md-4 -->
+          <div class="col-md-4 col-sm-6 has-margin-bottom"><!-- <img class="img-responsive" src="/content/images/ministry_2.jpg" alt="ministry sermon">-->
+          <h5>BAPTISMAL INSTRUCTIONS</h5>
+          <p>
+          Baptismal instructions are scheduled for Monday, <strong><u>September 21st at 7:30 PM</u></strong> (Please note date change) in the Rectory Conference Room. Your baby is always welcome in Church, however, for the instruction itself, please try to shedule a babysitter so you may be free to concentrate. Please call the Church Office at 610-834-1975 for sign up purposes.
+          </p>
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-4 col-sm-8 col-sm-offset-2 col-md-offset-0 center-this has-margin-bottom"> <!--<img class="img-responsive" src="/content/images/ministry_3.jpg" alt="bulletin programs">-->
+        <h5>50/50 TICKETS</h5>
+        <p>
+        Spring is Finally Here! <strong><u>The Garden Group</u></strong> is getting ready to start again, We will be selling 50/50 tickets in the vestibule after all Masses. Please stop by and purchase some tickets.
+        </p>
+      </div>
+      <!-- /.col-md-4 -->
+    </div>
+  </div>
+  <!-- // END OUR MINISTRIES-->        
+        
+<div class="section no-pad-bot" id="tag-banner" class="{{post_class}}" >
+  <div class="container" >
+
+ <!--   <h1 class="header center orange-text page-title">{{@blog.title}}</h1>
+    <h2 class="page-description">{{@blog.description}}</h2>
+	-->
+    {{! The tag below includes the post loop - partials/loop.hbs }}
+	
+	<br><br>
+	
+	{{! Previous/next page links - displayed on every page }}
+	{{pagination}}
+			
+  </div>
+	
+</div>	
+
+
+	
+{{! The tag below includes the three hero blocks - partials/three-blocks.hbs }}
+{{> "three-blocks"}}
+

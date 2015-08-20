@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{! Document Settings }}
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#03437a">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta name="keywords" content="Church, Website, Bulletin, Programs, Events, Saint Philip Neri, Saint Philip, St. Philip, Lafayette Hill Church, Church, Catholic, Lafayette Hill, Charity, Non Profit ">
+    <meta name="author" content="Good Candy Inc.">
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+    
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    {{! Styles'n'Scripts }}
+	<link href="{{asset "css/bootstrap.min.css"}}" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="{{asset "css/church.css"}}"	 type="text/css" rel="stylesheet" />
+	<link href="{{asset "css/fancybox.css"}}"		 type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="{{asset "css/post.css"}}"		 type="text/css" rel="stylesheet" media="screen,projection"/>
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="{{asset "js/respond.min.js"}}"></script>
+    <script src="{{asset "js/html5shiv.js"}}"></script>
+    <![endif]-->
+
+<!-- Custom Google Font : Montserrat and Droid Serif -->
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+
+ <style>
+      .specialhr {margin-top:10px; margin-bottom:10px;}
+      @media (min-width: 769px) {
+      .carousel{
+      height:450px;
+      }
+      }
+      .carousel .item {
+      height:450px;
+      background-color: #95b0da;
+      }
+
+.date-title:after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: -12px;
+    width: 110px;
+    height: 4px;
+    background: #383E58;
+    margin-left: -55px;
+}
+
+
+      </style>
+
+<body class="{{body_class}} ">
+
+    {{navigation}}
+<br>
+<br>
+<br>
+
+
+	{{! Everything else gets inserted here }}
+	{{{body}}}	  
+	
+	{{> "footer"}}
+	
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+
+    {{! The main JavaScript files }}
+	<script src="{{asset "js/all.js"}}"></script>
+	<script src="//google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+
+  <!--============== EVENT CAROUSEL =================-->
+  <script>
+  $('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+    navText: [
+  "<span class='nav-arrow left'></i>",
+  "<span class='nav-arrow right'></i>"
+  ],
+  responsive:{
+  0:{
+  items:1
+  },
+      550:{
+  items:2
+  },
+  768:{
+  items:3
+  },
+  992:{
+  items:4
+  }
+  }
+  })
+  $('.owl-carousel2').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+    navText: false,
+  responsive:{
+  0:{
+  items:1
+  }
+  }
+  })
+  </script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58302316-2', 'auto');
+  ga('send', 'pageview');
+
+// Using jQuery Event API v1.3
+$('#bulletin').on('click', function() {
+  ga('send', 'event', 'button', 'click', 'nav-buttons');
+});
+
+</script>
+
+</body>
+</html>
