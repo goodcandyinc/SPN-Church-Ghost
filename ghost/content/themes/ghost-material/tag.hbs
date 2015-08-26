@@ -1,6 +1,9 @@
 {{!< default}}
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
+<header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+</header>
+
 <div class="section no-pad-bot" id="tag-banner" class="{{post_class}}" >
   <div class="container">
   
