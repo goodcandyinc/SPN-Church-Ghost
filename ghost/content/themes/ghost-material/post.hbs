@@ -830,8 +830,8 @@ body h1 h2 h3 {color:black;}
     text-decoration: none;
     position: relative;
     text-align: center;
-    color: #fff;
-    background: #222 no-repeat center center;
+    color: black;
+    background: white no-repeat center center;
     background-size: cover;
     overflow: hidden;
 }
@@ -841,7 +841,7 @@ body h1 h2 h3 {color:black;}
 }
 .read-next-story:hover .post:before {
     color: #222;
-    background: #fff;
+    background: white;
     transition: all 0.2s ease;
 }
 
@@ -853,7 +853,6 @@ body h1 h2 h3 {color:black;}
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0,0,0,0.7);
     transition: all 0.5s ease;
 }
 
@@ -868,8 +867,6 @@ body h1 h2 h3 {color:black;}
     text-transform: uppercase;
     font-size: 1.1rem;
     font-family: "Open Sans", sans-serif;
-    color: rgba(255,255,255,0.8);
-    border: rgba(255,255,255,0.5) 1px solid;
     border-radius: 4px;
     transition: all 0.5s ease;
 }
@@ -879,17 +876,17 @@ body h1 h2 h3 {color:black;}
 
 .read-next-story h2 {
     margin-top: 1rem;
-    color: #fff;
+    color: black;
 }
 
 .read-next-story p {
     margin: 0;
-    color: rgba(255,255,255,0.8);
+    color: black;
 }
 
 /* Special styles for posts with no cover images */
 .read-next-story.no-cover {
-    background: #f5f8fa;
+    background: black;
 }
 
 .read-next-story.no-cover:before {
@@ -897,16 +894,15 @@ body h1 h2 h3 {color:black;}
 }
 
 .read-next-story.no-cover .post:before {
-    color: rgba(0,0,0,0.5);
-    border-color: rgba(0,0,0,0.2);
+    color: black;
 }
 
 .read-next-story.no-cover h2 {
-    color: rgba(0,0,0,0.8);
+    color: black;
 }
 
 .read-next-story.no-cover p {
-    color: rgba(0,0,0,0.5);
+    color: black;
 }
 
 /* if there are two posts without covers, put a border between them */
@@ -1520,51 +1516,24 @@ body h1 h2 h3 {color:black;}
 	  		<br>
 	  		<br>
 		  		<h1 class="header center typekitHeader">{{title}}</h1>
-			
+			     <section class="post-meta">
+                     <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+                </section><br>
 				<div class="typekitBody">{{content}}</div>
 				
 				<div class="section"></div>
-				<br><br>
-				<!-- 
-				<div class="{{post_class}}" >
-				 
-					<div class="card-content">
-					  <div class="row">
-					  	<div class="col s1">
-					  		{{#if author.image}}<img width="50" class="responsive-img circle" src="{{author.image}}" alt="Author image" />{{/if}}
-					  	</div>
-					  	<div class="col s11">
-							<span class="card-title blue-text text-darken-2">{{author.name}}</span>
-						</div>
-					  </div>
-					  <p>{{author.bio}}</p>
-					</div>
-				
-					<div class="card-action">
-						Share on:
-			            <a class="icon-twitter" href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
-			                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-			                <span class="hidden">Twitter</span>
-			            </a>
-			            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
-			                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-			                <span class="hidden">Facebook</span>
-			            </a>
-			            <a class="icon-google-plus" href="https://plus.google.com/share?url={{url absolute="true"}}"
-			               onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-			                <span class="hidden">Google+</span>
-			            </a>
-					</div>
-		  		</div>
-
-				        	
-					-->
+				<br>
+             <hr>
+            {{#author}}
+            <h6 style="color:gray">Posted By: {{name}}</h6>
+            <p style="color:gray;">Read <a href="{{url}}"><u>more posts</u></a> by {{name}}.</p>
+            <p style="font-size:1.4rem">NOTE: If you notice anything incorrect with this post, please email <a href="mailto:stanczak.matt@gmail.com">stanczak.matt@gmail.com</a></p>
+            {{/author}}
 			</div>	
 
-
-
-		
 	  </div>
-	</div>	
+     </div> 
+
+
 
 {{/post}}
