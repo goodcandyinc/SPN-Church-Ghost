@@ -40,17 +40,23 @@
               </div>
             </div>
           </div>
-          <div class="item slide-four">
+                {{#foreach posts}}
+                  {{#if featured}}
+          <div class="item slide-four" style="background:{{#if image}}url({{image}});{{else}}url{{asset "./content/images/church.jpg"}}{{/if}}; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;">
             <div class="container">
               <div class="carousel-caption" style="color:#03437a; top:15%">
-                <h3>CHURCH NOTES FROM MONSIGNOR VANCE! </h3><br>
-                  <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                View Notes
-                </button>                                
+
+                      <article class="{{post_class}} featured" style="background-color:rgba(230,239,239,0.95); padding:10px;border:5px solid #03437a;">
+                         <header class="post-header">
+                             <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+                          </header>
+                        </article>
+                              
             </div>
           </div>
-        </div>          
+        </div>  
+         {{/if}}
+          {{/foreach}}        
       </div>
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> </div>
         <!-- // Banner Slider -->
