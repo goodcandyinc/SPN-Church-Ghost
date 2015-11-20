@@ -18,7 +18,7 @@
               </div>
             </div>
           </div>
-          <div class="item slide-two">
+         <!-- <div class="item slide-two">
             <div class="container">
               <div class="carousel-caption" style="color:#03437a; top:5%">
                                               
@@ -33,31 +33,30 @@
                                 
               </div>
             </div>
-          </div>
-          <div class="item slide-three">
+          </div> -->
+         <!-- <div class="item slide-three">
             <div class="container">
               <div class="carousel-caption">
               </div>
             </div>
-          </div>
-                {{#foreach posts}}
-                  {{#if featured}}
-          <div class="item slide-four" style="background:{{#if image}}url({{image}});{{else}}url{{asset "./content/images/church.jpg"}}{{/if}}; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;">
-            <div class="container">
-              <div class="carousel-caption" style="color:#03437a; top:15%">
+          </div> -->
 
-                      <article class="{{post_class}} featured" style="background-color:rgba(230,239,239,0.95); padding:10px;border:5px solid #03437a;">
+          {{#foreach posts}}
+            {{#if featured}}
+                <div class="item slide-four" style="background:{{#if image}}url({{image}});{{else}}url{{asset "./content/images/church.jpg"}}{{/if}}; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;">
+                  <div class="container">
+                    <div class="carousel-caption" style="color:#03437a; top:15%">
+                      <article class="{{post_class}} featured" style="background-color:rgba(230,239,239,0.95); padding:40px;border:10px solid #03437a;">
                          <header class="post-header">
                              <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
                           </header>
-                        </article>
-                              
-            </div>
+                        </article>                                    
+                     </div>
+                    </div>
+                  </div>  
+              {{/if}}
+            {{/foreach}}        
           </div>
-        </div>  
-         {{/if}}
-          {{/foreach}}        
-      </div>
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> </div>
         <!-- // Banner Slider -->
         <!--UPCOMING EVENT-->
@@ -136,29 +135,6 @@
 
 <!-- <hr style="border-top: 3px solid #DEE6F3; width:65%"><br><br> -->
 
-<!--PASTOR NOTES POP UP Box -->
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      
-                      <h4 class="modal-title" id="myModalLabel" style="text-align:center;">Pastor's Notes</h4>
-                    </div>
-                    <div class="modal-body" style="text-align:left;">
-                        <ul>
-                          <li>
-                          October Count Please Note: During all weekend Masses in October; the ushers will be counting the number of people attending each Mass. These attendance numbers are reported to the Archdiocese to use for long-term planning.
-                          </li>
-                        </ul>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-<!-- End Modal -->
 
 <!-- END EASTER SUNDAY SCHEDULE -->
   <!-- BLOG LIST / LATEST SERMONS -->
@@ -182,6 +158,122 @@
                 <!--Latest Sermons-->
                 <div class="col-md-4">
                   <div class="well">
+                   <div class="section-title">
+                      <h4>DAILY AND SUNDAY MASS SCHEDULE</h4>
+                        </div>
+                        <div class="row has-margin-bottom">
+                            <div class="col-md-12 col-sm-12 bulletin" style="text-align:center;">
+                                <p></p>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Weekday Schedule</h3>
+                                    </div>
+
+                                    <div class="panel-body">
+                                        <table class="table" style="text-align:left">
+                                            <thead>
+                                                <tr>
+                                                    <th>Day</th>
+
+                                                    <th>Mass Times</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr>
+                                                    <td>Monday</td>
+
+                                                    <td>6:30AM & 8:30AM</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Tuesday</td>
+
+                                                    <td>6:30AM & 8:30AM</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Wednesday</td>
+
+                                                    <td>6:30AM & 8:30AM</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Thursday</td>
+
+                                                    <td>6:30AM & 8:30AM</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Friday</td>
+
+                                                    <td>6:30AM & 8:30AM</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Saturday</td>
+
+                                                    <td>8:30AM</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Sunday Schedule</h3>
+                                    </div>
+
+                                    <div class="panel-body">
+                                        <table class="table" style="text-align:left">
+                                            <thead>
+                                                <tr>
+                                                    <th>Day</th>
+
+                                                    <th>Mass Time</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                              <tr>
+                                                    <td>Saturday</td>
+
+                                                    <td>5:00 PM</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Sunday</td>
+
+                                                    <td>7:00 AM</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+
+                                                    <td>8:30 AM</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+
+                                                    <td>10:00 AM</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+
+                                                    <td>11:30 AM</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--Blog list-->
+
+
                     <div class="section-title">
                       <h4> ANNOUNCEMENTS </h4>
                     </div>
@@ -197,10 +289,6 @@
                       <hr class="specialhr">
                       <p class="list-group-item-heading"><B>Prayer Requests</B></p>
                       <p class="list-group-item-text">All prayer requests should be submitted in writing to our parish office. The address to mail prayer requests is St. Philip Neri Church 437 Ridge Pike Lafayette Hill, PA 19444.</p>
-                      <br>
-                      <hr class="specialhr">
-                      <p class="list-group-item-heading"><b>Baptismal Instructions</b></p>
-                      <p class="list-group-item-text">Your baby is always welcome in Church, however, for the instruction itself, please try to schedule a babysitter so you may be free to concentrate.<br><br><b>Contact: Church Office at 610-834-1975</b></p>
                       <br>
                       <hr class="specialhr">
                       <p class="list-group-item-heading"><b>Are You A Parent Who Has Lost A Child?</b></p>
