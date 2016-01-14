@@ -1,7 +1,7 @@
 
 	 <ul class="pagination">
 	  {{#if next}}
-	  	<li class="waves-effect pagination-item older"><a href="{{page_url next}}"><i class="fa fa-arrow-left"></i></a></li>
+	  	<li sclass="waves-effect pagination-item older"><a href="{{page_url next}}"><i class="fa fa-arrow-left"></i></a></li>
 	  {{else}}
 	    <li class="disabled pagination-item older"><a href="#!"><i class="fa fa-arrow-left"></i></a></li>
 	  {{/if}}
@@ -10,4 +10,6 @@
 	  {{else}}
 	  	<li class="disabled pagination-item newer"><a href="#!"><i class="fa fa-arrow-right"></i></a></li>
 	  {{/if}}
+
+
 	 </ul>
