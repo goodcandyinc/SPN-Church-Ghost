@@ -148,7 +148,7 @@
         <br>
         
                                 
-          </div>
+        </div>
                 <!--// col md 9-->
                 
                 <!--Latest Sermons-->
@@ -166,6 +166,28 @@
                         </p>
                     </div><br>
 
+                    <div class="section-title">
+                      <h4>This Weeks Announced Masses</h4><br>
+                      <p style="text-align:center">
+                        {{#get "posts" limit="1" filter="tags:announced-masses"}}
+                            {{#foreach posts}}
+                                <h6><span style="font-size:16px;">{{title}}</h6><p>{{content}}</p>
+                            {{/foreach}}
+                        {{/get}}
+                        </p>
+                    </div><br>
+
+                    <div class="section-title">
+                      <h4>ANNOUNCEMENTS</h4><br>
+                      <p style="text-align:center">
+                        {{#get "posts" limit="1" filter="tags:announcements"}}
+                            {{#foreach posts}}
+                                <p>{{content}}</p>
+                            {{/foreach}}
+                        {{/get}}
+                        </p>
+                    </div><br>
+
 
 
                   <!--<div class="section-title">
@@ -175,142 +197,6 @@
 <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script> </div>
                     </div><br> -->
 
-                   <div class="section-title">
-                      <h4>DAILY AND SUNDAY MASS SCHEDULE</h4>
-                    </div>
-                        <div class="row has-margin-bottom">
-                            <div class="col-md-12 col-sm-12 bulletin" style="text-align:center;">
-                                <p></p>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">Weekday Schedule</h3>
-                                    </div>
-
-                                    <div class="panel-body">
-                                        <table class="table" style="text-align:left">
-                                            <thead>
-                                                <tr>
-                                                    <th>Day</th>
-
-                                                    <th>Mass Times</th>
-                                                </tr>
-                                            </thead>
-
-                                            <tbody>
-                                                <tr>
-                                                    <td>Monday</td>
-
-                                                    <td>6:30AM & 8:30AM</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Tuesday</td>
-
-                                                    <td>6:30AM & 8:30AM</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Wednesday</td>
-
-                                                    <td>6:30AM & 8:30AM</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Thursday</td>
-
-                                                    <td>6:30AM & 8:30AM</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Friday</td>
-
-                                                    <td>6:30AM & 8:30AM</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Saturday</td>
-
-                                                    <td>8:30AM</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">Sunday Schedule</h3>
-                                    </div>
-
-                                    <div class="panel-body">
-                                        <table class="table" style="text-align:left">
-                                            <thead>
-                                                <tr>
-                                                    <th>Day</th>
-
-                                                    <th>Mass Time</th>
-                                                </tr>
-                                            </thead>
-
-                                            <tbody>
-                                              <tr>
-                                                    <td>Saturday</td>
-
-                                                    <td>5:00 PM</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Sunday</td>
-
-                                                    <td>7:00 AM</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td></td>
-
-                                                    <td>8:30 AM</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td></td>
-
-                                                    <td>10:00 AM</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td></td>
-
-                                                    <td>11:30 AM</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--Blog list-->
-
-
-                    <div class="section-title">
-                      <h4> ANNOUNCEMENTS </h4>
-                    </div>
-                    <!--<a href="#"><img src="/content/images/video-thumb.jpg" class="img-responsive center-block" alt="video thumb"></a>-->
-                    <div class="list-group">
-                      <p class="list-group-item-heading"><b>Men's Prayer Group</b></p>
-                      <p class="list-group-item-text">Meets every Wednesday at 7:30 a.m. in the Rectory Conference Room. <br><br><b>Contact: Duane McCarthy 610.825.5237</b></p>
-                      <br>
-                      <hr class="specialhr">
-                      <p class="list-group-item-heading"><b>Women's Prayer Group</b></p>
-                      <p class="list-group-item-text">  Our women's prayer group meets in the Rectory Dining Room Thursday, January 7th from 11:00 AM- 12:00 PM  Reflections on the day's readings and the upcoming Sunday readings are shared within the context of the Prayer of the Church.</p>
-                      <br>
-                      <hr class="specialhr">
-                      <p class="list-group-item-heading"><B>Prayer Requests</B></p>
-                      <p class="list-group-item-text">All prayer requests should be submitted in writing to our parish office. The address to mail prayer requests is St. Philip Neri Church 437 Ridge Pike Lafayette Hill, PA 19444.</p>
-                      <br>
-                      <hr class="specialhr">
-                      <p class="list-group-item-heading"><b>Are You A Parent Who Has Lost A Child?</b></p>
-                      <p class="list-group-item-text">An informal group of Moms and Dads get together to talk or just listen to others who understand how you feel. This group meets every third Tuesday of the month at 7:00 PM in the Rectory Conference Room. <br><br><b>Contact: Marianne O'Connor 610-825-4975 or Rosemary McNichol 215-247-2267.</b></p>
-                    </div>
                   </div>
                 </div>
               </div>
