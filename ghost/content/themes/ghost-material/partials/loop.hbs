@@ -1,5 +1,6 @@
 
 {{! This is the post loop - each post will be output using this markup }}
+{{#get "posts" limit="8" filter="tags:posts-tag"}}
 {{#foreach posts}}
 
 <!--<div class="card" class="{{post_class}}" >
@@ -55,7 +56,7 @@
 
 
 {{/foreach}}
-
+{{/get}}
 
 
 

@@ -154,12 +154,26 @@
                 <!--Latest Sermons-->
                 <div class="col-md-4">
                   <div class="well">
-                  <div class="section-title">
+
+                    <div class="section-title">
+                      <h4>Readings</h4><br>
+                      <p style="text-align:center">
+                        {{#get "posts" limit="7" filter="tags:readings"}}
+                            {{#foreach posts}}
+                                <p><a href="{{slug}}">{{title}}</a></p>
+                            {{/foreach}}
+                        {{/get}}
+                        </p>
+                    </div><br>
+
+
+
+                  <!--<div class="section-title">
                       <h4>Subscribe to the Church Newsletter!</h4><br>
                       <p style="text-align:center">Be the first to hear about the Weekly Bulletin, Upcoming Events, Special Mass Schedules, and Weekly Readings!</p> <h6 style=text-align:center><a href="http://us12.campaign-archive2.com/?u=287b5874ee087ad9afdbc84e2&id=c4a13252c6"  target="_blank" style="text-decoration:underline">Example Newsletter</a></h6>
                      <div class="row "><a class="btn btn-lg btn-primary dload typeform-share link" href="https://spn.typeform.com/to/blqAtz" data-mode="1" target="_blank">Subscribe Today</a>
 <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script> </div>
-                    </div><br>
+                    </div><br> -->
 
                    <div class="section-title">
                       <h4>DAILY AND SUNDAY MASS SCHEDULE</h4>
