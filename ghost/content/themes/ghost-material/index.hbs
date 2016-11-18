@@ -63,15 +63,15 @@
         <div class="highlight-bg">
           <div class="container event-cta">
             <div class="ec-txt tk-franklin-gothic-urw"> <span>THIS WEEK AT SAINT PHILIP NERI CHURCH</span>
-              <p class='tk-abril-display'>This Weeks Bulletin and Readings- November 13th, 2016</p>
+              <p class='tk-abril-display'>This Weeks Bulletin and Mass Schedule - November 20th, 2016</p>
         	</div>
           <!-- ***************** Update Below Weekly ********************* -->
            {{#get "posts" limit="1" filter="tags:readings"}}
              {{#foreach posts}}
-                <a class="btn btn-lg btn-primary dload" href="{{slug}}" role="button" style="margin:7px;">Today's Readings</a>
+                <a class="btn btn-lg btn-primary dload" href="http://www.saintphilipnerichurch.com/mass_schedule/" role="button" style="margin:7px;">Mass Schedule</a>
               {{/foreach}}
             {{/get}}            
-            <a class="btn btn-lg btn-primary dload" href="http://www.saintphilipnerichurch.com/shared/bulletins/2016/11-13-2016.pdf" target="_blank" role="button" style="margin:7px;" id="bulletin">View Bulletin</a> 
+            <a class="btn btn-lg btn-primary dload" href="http://www.saintphilipnerichurch.com/shared/bulletins/2016/11-20-2016.pdf" target="_blank" role="button" style="margin:7px;" id="bulletin">View Bulletin</a> 
 
 
           </div>
@@ -160,7 +160,7 @@
                 <div class="col-md-4">
                   <div class="well">
 
-                    <div class="section-title">
+                    <!-- <div class="section-title">
                       <h4>Readings</h4><br>
                       <p style="text-align:center">
                         {{#get "posts" limit="7" filter="tags:readings"}}
@@ -169,7 +169,7 @@
                             {{/foreach}}
                         {{/get}}
                         </p>
-                    </div><br>
+                    </div><br> -->
 
                     <div class="section-title">
                       <h4>This Weeks Announced Masses</h4><br>
