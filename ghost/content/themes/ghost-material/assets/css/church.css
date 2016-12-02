@@ -1141,4 +1141,19 @@ background-color: #D3CFCC;
   right: 0;
 }
 
+@font-face {
+    font-family: 'luloone_bold';
+    src: url('../fonts/lulu/luloonebold-webfont.eot');
+    src: url('../fonts/lulu/luloonebold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lulu/luloonebold-webfont.woff2') format('woff2'),
+         url('../fonts/lulu/luloonebold-webfont.woff') format('woff'),
+         url('../fonts/lulu/luloonebold-webfont.ttf') format('truetype'),
+         url('../fonts/lulu/luloonebold-webfont.svg#luloone_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
+
+.lulubold {
+	font-family: 'luluone_bold', Arial, sans-serif;
+}
