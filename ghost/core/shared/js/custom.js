@@ -3,10 +3,26 @@ $( document ).ready(function() {
 	var button_selected_background = "#03437a"
 	var button_color = "black"
 	var button_background = "white"	
-	$('#button_2017').css('color',button_selected_color);
-	$('#button_2017').css('background-color',button_selected_background);	
-	$("#2017").show();
-	$('a.archive_link2017').click(function() {
+	$('#button_2018').css('color',button_selected_color);
+	$('#button_2018').css('background-color',button_selected_background);	
+	$("#2018").show();
+	$('a.archive_link2018').click(function() {
+		$("#2018").show("fast");
+		$("#2017").hide("fast");
+		$("#2016").hide("fast");
+		$("#2015").hide("fast");
+		$("#2014").hide("fast");
+		$("#2013").hide("fast");
+		$("#2012").hide("fast");
+		$("#2011").hide("fast");
+		$("#2010").hide("fast");
+		$('#button_2018').css('color',button_selected_color);
+		$('#button_2018').css('background-color',button_selected_background);
+		$('#button_2017, #button_2016, #button_2015, #button_2014, #button_2013, #button_2012, #button_2011, #button_2010').css('color',button_color);
+		$('#button_2017, #button_2016, #button_2015, #button_2014, #button_2013, #button_2012, #button_2011, #button_2010').css('background-color',button_background);					
+	});	
+$('a.archive_link2017').click(function() {
+		$("#2018").hide("fast");
 		$("#2017").show("fast");
 		$("#2016").hide("fast");
 		$("#2015").hide("fast");
@@ -17,10 +33,11 @@ $( document ).ready(function() {
 		$("#2010").hide("fast");
 		$('#button_2017').css('color',button_selected_color);
 		$('#button_2017').css('background-color',button_selected_background);
-		$('#button_2016, #button_2015, #button_2014, #button_2013, #button_2012, #button_2011, #button_2010').css('color',button_color);
-		$('#button_2016, #button_2015, #button_2014, #button_2013, #button_2012, #button_2011, #button_2010').css('background-color',button_background);					
-	});	
+		$('#button_2018, #button_2016, #button_2015, #button_2014, #button_2013, #button_2012, #button_2011, #button_2010').css('color',button_color);
+		$('#button_2018, #button_2016, #button_2015, #button_2014, #button_2013, #button_2012, #button_2011, #button_2010').css('background-color',button_background);					
+	});		
 	$('a.archive_link2016').click(function() {
+		$("#2018").hide("fast");
 		$("#2017").hide("fast");
 		$("#2016").show("fast");
 		$("#2015").hide("fast");
@@ -31,10 +48,11 @@ $( document ).ready(function() {
 		$("#2010").hide("fast");
 		$('#button_2016').css('color',button_selected_color);
 		$('#button_2016').css('background-color',button_selected_background);
-		$('#button_2017, #button_2015, #button_2014, #button_2013, #button_2012, #button_2011, #button_2010').css('color',button_color);
-		$('#button_2017, #button_2015, #button_2014, #button_2013, #button_2012, #button_2011, #button_2010').css('background-color',button_background);					
+		$('#button_2018, #button_2017, #button_2015, #button_2014, #button_2013, #button_2012, #button_2011, #button_2010').css('color',button_color);
+		$('#button_2018, #button_2017, #button_2015, #button_2014, #button_2013, #button_2012, #button_2011, #button_2010').css('background-color',button_background);					
 	});	
 	$('a.archive_link2015').click(function() {
+		$("#2018").hide("fast");
 		$("#2017").hide("fast");
 		$("#2016").hide("fast");
 		$("#2015").show("fast");
@@ -45,10 +63,11 @@ $( document ).ready(function() {
 		$("#2010").hide("fast");
 		$('#button_2015').css('color',button_selected_color);
 		$('#button_2015').css('background-color',button_selected_background);
-		$('#button_2017, #button_2016, #button_2014, #button_2013, #button_2012, #button_2011, #button_2010').css('color',button_color);
-		$('#button_2017, #button_2016, #button_2014, #button_2013, #button_2012, #button_2011, #button_2010').css('background-color',button_background);					
+		$('#button_2018, #button_2017, #button_2016, #button_2014, #button_2013, #button_2012, #button_2011, #button_2010').css('color',button_color);
+		$('#button_2018, #button_2017, #button_2016, #button_2014, #button_2013, #button_2012, #button_2011, #button_2010').css('background-color',button_background);					
 	});
 	$('a.archive_link2014').click(function() {
+		$("#2018").hide("fast");
 		$("#2017").hide("fast");
 		$("#2016").hide("fast");
 		$("#2015").hide("fast");
@@ -59,10 +78,11 @@ $( document ).ready(function() {
 		$("#2010").hide("fast");
 		$('#button_2014').css('color',button_selected_color);
 		$('#button_2014').css('background-color',button_selected_background);
-		$('#button_2017, #button_2016, #button_2015, #button_2013, #button_2012, #button_2011, #button_2010').css('color',button_color);
-		$('#button_2017, #button_2016, #button_2015, #button_2013, #button_2012, #button_2011, #button_2010').css('background-color',button_background);			
+		$('#button_2018, #button_2017, #button_2016, #button_2015, #button_2013, #button_2012, #button_2011, #button_2010').css('color',button_color);
+		$('#button_2018, #button_2017, #button_2016, #button_2015, #button_2013, #button_2012, #button_2011, #button_2010').css('background-color',button_background);			
 	});
 	$('a.archive_link2013').click(function() {
+		$("#2018").hide("fast");
 		$("#2017").hide("fast");
 		$("#2013").show("fast");
 		$("#2016").hide("fast");
@@ -73,10 +93,11 @@ $( document ).ready(function() {
 		$("#2010").hide("fast");
 		$('#button_2013').css('color',button_selected_color);
 		$('#button_2013').css('background-color',button_selected_background);
-		$('#button_2017, #button_2016, #button_2014, #button_2015, #button_2012, #button_2011, #button_2010').css('color',button_color);
-		$('#button_2017, #button_2016, #button_2014, #button_2015, #button_2012, #button_2011, #button_2010').css('background-color',button_background);			
+		$('#button_2018, #button_2017, #button_2016, #button_2014, #button_2015, #button_2012, #button_2011, #button_2010').css('color',button_color);
+		$('#button_2018, #button_2017, #button_2016, #button_2014, #button_2015, #button_2012, #button_2011, #button_2010').css('background-color',button_background);			
 	});
 	$('a.archive_link2012').click(function() {
+		$("#2018").hide("fast");
 		$("#2017").hide("fast");
 		$("#2012").show("fast");
 		$("#2016").hide("fast");
@@ -87,10 +108,11 @@ $( document ).ready(function() {
 		$("#2010").hide("fast");
 		$('#button_2012').css('color',button_selected_color);
 		$('#button_2012').css('background-color',button_selected_background);
-		$('#button_2017, #button_2016, #button_2014, #button_2013, #button_2015, #button_2011, #button_2010').css('color',button_color);
-		$('#button_2017, #button_2016, #button_2014, #button_2013, #button_2015, #button_2011, #button_2010').css('background-color',button_background);			
+		$('#button_2018, #button_2017, #button_2016, #button_2014, #button_2013, #button_2015, #button_2011, #button_2010').css('color',button_color);
+		$('#button_2018, #button_2017, #button_2016, #button_2014, #button_2013, #button_2015, #button_2011, #button_2010').css('background-color',button_background);			
 		});
 	$('a.archive_link2011').click(function() {
+		$("#2018").hide("fast");
 		$("#2017").hide("fast");
 		$("#2016").hide("fast");
 		$("#2015").hide("fast");
@@ -101,10 +123,11 @@ $( document ).ready(function() {
 		$("#2010").hide("fast");
 		$('#button_2011').css('color',button_selected_color);
 		$('#button_2011').css('background-color',button_selected_background);
-		$('#button_2017, #button_2016, #button_2014, #button_2013, #button_2012, #button_2015, #button_2010').css('color',button_color);
-		$('#button_2017, #button_2016, #button_2014, #button_2013, #button_2012, #button_2015, #button_2010').css('background-color',button_background);			
+		$('#button_2018, #button_2017, #button_2016, #button_2014, #button_2013, #button_2012, #button_2015, #button_2010').css('color',button_color);
+		$('#button_2018, #button_2017, #button_2016, #button_2014, #button_2013, #button_2012, #button_2015, #button_2010').css('background-color',button_background);			
 		});
 	$('a.archive_link2010').click(function() {
+		$("#2018").hide("fast");
 		$("#2017").hide("fast");
 		$("#2016").hide("fast");
 		$("#2015").hide("fast");
@@ -115,8 +138,8 @@ $( document ).ready(function() {
 		$("#2010").show("fast");
 		$('#button_2010').css('color',button_selected_color);
 		$('#button_2010').css('background-color',button_selected_background);
-		$('#button_2017, #button_2016, #button_2014, #button_2013, #button_2012, #button_2011, #button_2015').css('color',button_color);
-		$('#button_2017, #button_2016, #button_2014, #button_2013, #button_2012, #button_2011, #button_2015').css('background-color',button_background);			
+		$('#button_2018, #button_2017, #button_2016, #button_2014, #button_2013, #button_2012, #button_2011, #button_2015').css('color',button_color);
+		$('#button_2018, #button_2017, #button_2016, #button_2014, #button_2013, #button_2012, #button_2011, #button_2015').css('background-color',button_background);			
 		});
 
 	$(function () {
